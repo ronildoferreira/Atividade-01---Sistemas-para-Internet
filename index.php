@@ -98,20 +98,20 @@ $colaboradores = array(
                                 <th scope="row"></th>
 
                                     <td><?= $item['nome'] ?></td>
-                                    <td>R$  <?= $item['salario-fixo'] ?></td>
-                                    <td>R$  <?= $item['venda1'] ?></td>
-                                    <td>R$  <?= $item['venda2'] ?></td>
-                                    <td>R$  <?= $item['venda3'] ?></td>
-                                    <td>R$  <?= $item['venda4'] ?></td>
+                                    <td><strong>R$  </strong><?= $item['salario-fixo'] ?></td>
+                                    <td><strong>R$  </strong><?= $item['venda1'] ?></td>
+                                    <td><strong>R$  </strong><?= $item['venda2'] ?></td>
+                                    <td><strong>R$  </strong><?= $item['venda3'] ?></td>
+                                    <td><strong>R$  </strong><?= $item['venda4'] ?></td>
 
                                     <!--Somando todas as semanas-->
-                                    <td class="table-info">R$  <?= $item['total-vendas'] = $item['salario-fixo']+$item['venda1']+$item['venda2']+$item['venda3']+$item['venda4']?></td>
+                                    <td class="table-info"><strong>R$  </strong><?= $item['total-vendas'] = $item['salario-fixo']+$item['venda1']+$item['venda2']+$item['venda3']+$item['venda4']?></td>
                                     
                                     <!--aplicando uma comissão de 5%-->
-                                    <td class="table-info">R$  <?= $item['comissao'] = $item['total-vendas'] * 0.05 ?></td>
+                                    <td class="table-info"><strong>R$  </strong><?= $item['comissao'] = $item['total-vendas'] * 0.05 ?></td>
                                     
                                     <!--Valor final, soma do salario fixo mais comissão-->
-                                    <td class="table-info">R$  <?= $item['salario-final'] = $item['salario-fixo']+$item['comissao']?></td> 
+                                    <td class="table-info"><strong>R$  </strong><?= $item['salario-final'] = $item['salario-fixo']+$item['comissao']?></td> 
                                                               
                             <?php endforeach; ?>                        
                         </td>
